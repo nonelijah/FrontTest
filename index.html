@@ -1,0 +1,43 @@
+<!DOCTYPE html>
+<html lang="ko">
+    <head>
+        <meta charset="UTF-8" />
+        <meta http-equiv="X-UA-Compatible" content="IE=edge" />
+        <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+        <title>Timer</title>
+        <link rel="stylesheet" href="./css/reset.css" />
+        <link rel="stylesheet" href="./css/style.css" />
+    </head>
+    <body>
+        <h1 class="tit"><img src="./img/weniv-logo.svg" alt="WeNiv" /></h1>
+        <article class="timer-wrap">
+            <h2 class="timer-tit">Timer</h2>
+            <hr class="div-line" />
+            <form class="times">
+                <input type="number" name="hrs" id="hrs" />:
+                <input type="number" name="min" id="min" />:
+                <input type="number" name="sec" id="sec" />
+                <div class="btn-group">
+                    <button>
+                        <img
+                            id="btn-control"
+                            src="./img/icon-start-disabled.svg"
+                            alt="start"
+                        />
+                        START
+                    </button>
+                    <button>
+                        <img
+                            id="btn-reset"
+                            src="./img/icon-reset-disabled.svg"
+                            alt="reset"
+                        />RESET
+                    </button>
+                </div>
+            </form>
+        </article>
+        <footer>
+            <address>ⓒ WENIV Corp.</address>
+        </footer>
+    </body>
+</html>

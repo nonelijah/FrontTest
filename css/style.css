@@ -1,0 +1,27 @@
+body {
+    width: 100%;
+    height: 100vh;
+    font-family: "Pretendard-Regular", sans-serif;
+    background: linear-gradient(135deg, #f0f4ff, #a5b6ee);
+}
+
+.tit {
+    margin: 72px auto 60px;
+    max-width: 244px;
+}
+
+.timer-wrap {
+    width: 400px;
+    height: 360px;
+    box-sizing: border-box;
+    border: 0;
+    border-radius: 16px;
+    padding: 48px 44px 40px;
+    box-shadow: 20px 20px 60px rgba(55, 75, 124, 0.4);
+    background: linear-gradient(135deg, #5572bb, #374b7c);
+
+    position: fixed;
+    top: 50%;
+    left: 50%;
+    transform: translate(-50%, -50%);
+}
