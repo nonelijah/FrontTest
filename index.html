@@ -12,32 +12,46 @@
         <h1 class="tit"><img src="./img/weniv-logo.svg" alt="WeNiv" /></h1>
         <article class="timer-wrap">
             <h2 class="timer-tit">Timer</h2>
-            <hr class="div-line" />
+            <div class="div-line"></div>
             <form class="times">
-                <input type="number" name="hrs" id="hrs" />:
-                <input type="number" name="min" id="min" />:
-                <input type="number" name="sec" id="sec" />
-                <div class="btn-group">
-                    <button>
-                        <img
-                            id="btn-control"
-                            src="./img/icon-start-disabled.svg"
-                            alt="start"
-                        />
-                        START
-                    </button>
-                    <button>
-                        <img
-                            id="btn-reset"
-                            src="./img/icon-reset-disabled.svg"
-                            alt="reset"
-                        />RESET
-                    </button>
+                <div>
+                    <label
+                        >HRS
+                        <input type="number" name="hrs" id="hrs" step="1" />
+                    </label>
                 </div>
+
+                <label
+                    >MIN<input
+                        type="number"
+                        name="min"
+                        id="min"
+                        step="1"
+                        min="00"
+                        max="60"
+                /></label>
+                <label
+                    >SEC<input
+                        type="number"
+                        name="sec"
+                        id="sec"
+                        step="1"
+                        min="00"
+                        max="60"
+                /></label>
             </form>
+            <div class="btn-group">
+                <button id="btn-control" disabled>
+                    <img src="./img/icon-start-disabled.svg" alt="start" />
+                    START
+                </button>
+                <button id="btn-reset" disabled>
+                    <img src="./img/icon-reset-disabled.svg" alt="reset" />RESET
+                </button>
+            </div>
         </article>
-        <footer>
-            <address>ⓒ WENIV Corp.</address>
+        <footer class="footer">
+            <p>ⓒ WENIV Corp.</p>
         </footer>
     </body>
 </html>

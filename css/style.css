@@ -19,9 +19,90 @@ body {
     padding: 48px 44px 40px;
     box-shadow: 20px 20px 60px rgba(55, 75, 124, 0.4);
     background: linear-gradient(135deg, #5572bb, #374b7c);
+    margin: 60px auto 60px;
 
-    position: fixed;
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+}
+
+.timer-tit {
+    color: white;
+    font-size: 24px;
+    font-weight: bold;
+}
+
+.div-line {
+    border: 1px solid #3d538a;
+    width: 100%;
+    margin: 23px auto 32px;
+}
+
+.times {
+    display: flex;
+    align-items: center;
+    color: #a5b6ee;
+    font-size: 12px;
+    gap: 22px;
+}
+
+.times label {
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    margin-bottom: 4px;
+}
+
+.times input {
+    width: 80px;
+    height: 80px;
+    border: 1px solid #354971;
+    background: linear-gradient(305deg, #304577, #4c65a0);
+    border-radius: 5px;
+    text-align: center;
+    font-size: 40px;
+    color: white;
+    position: relative;
+}
+
+.times input + input::before {
+    content: ":";
+    color: #8198d0;
+    font-size: 40px;
+    position: absolute;
     top: 50%;
-    left: 50%;
-    transform: translate(-50%, -50%);
+    left: -8px;
+}
+
+.btn-group {
+    margin-top: 40px;
+}
+
+.btn-group button {
+    width: 112px;
+    height: 48px;
+    border-radius: 50px;
+    box-shadow: 1px 1px 1px rgba(0, 0, 0, 0.5);
+    cursor: pointer;
+}
+
+.btn-group button:disabled {
+    color: #617199;
+    background-color: #324577;
+}
+
+.btn-group img {
+    width: 16px;
+    height: 16px;
+}
+
+.footer {
+    width: 100%;
+    color: #8596bf;
+    font-size: 14px;
+    font-weight: 400;
+}
+
+.footer p {
+    margin: 0 auto;
 }
