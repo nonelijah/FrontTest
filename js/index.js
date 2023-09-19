@@ -10,9 +10,15 @@ function timer() {
     const btnControl = btns.querySelector("#btn-control");
     const btnReset = btns.querySelector("#btn-reset");
 
-    hrs.value = parseInt("00");
-    min.value = parseInt("00");
-    sec.value = parseInt("00");
+    if (hrs.value === "") {
+        hrs.value = parseInt("00");
+    }
+    if (min.value === "") {
+        min.value = parseInt("00");
+    }
+    if (sec.value === "") {
+        sec.value = parseInt("00");
+    }
 
     if (hrs.value !== "0" || min.value !== "0" || sec.value !== "0") {
         btnControl.disabled = false;
